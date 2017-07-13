@@ -5,16 +5,22 @@
 	position: relative;
 }
 
+body {
+	background-image: url(../images/tree_bark.png);
+}
+
 header {
 	background-color: #FFFFFF;
-	width: 960px;
+	width: 100%;
 	height: 100px;
 	font-family: "Georgia", Times, "Times New Roman", serif;
 	margin: auto;
 }
 
-#background {
-	background-image: url(../images/tree_bark.png);
+#sizeSet {
+	width: 950px;
+	height: 100px;
+	margin: auto;
 }
 
 #mainBio {
@@ -65,30 +71,48 @@ h1 {
 }
 
 #aboutMe {
-	margin-top: 0px;
-	height: 100px;
+	height: 65px;
 	width: 100%;
 	color: #0BADA7;
 	background-color: #FFFFFF;
+	padding-top: 5%;
+	padding-left:5%;
 }
 
 section {
 	width: 650px;
 	background-color: #FFFFFF;
-	margin-left: 16.7%
+	margin-left: 16.7%;
+	border: 1px solid #777777;
+	margin-top: 3%;
+}
+
+article {
+	border-top: 3px solid #777777;
+	margin: 5%;
 }
 
 #adamImage {
+	margin-top: 5%;
+	margin-right: 3%;
 	display: inline-block;
 	height: 15%;
 	width: 25%;
+	float: left;
 }
 
 p {
-	display: inline-block;
+	margin-top: 4.2%;
+	line-height: 150%
+	margin-left: 3%;
+	letter-spacing: 0.5px;
 }
 
 #links {
 	float: right;
 }
 
+.clearFix::after {
+	display: block;
+	clear: both;
+}
