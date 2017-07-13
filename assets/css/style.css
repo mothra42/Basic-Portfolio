@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	position: relative;
+}
+
+header {
+	width: 960px;
+	height: 100px;
+	font-family: "Georgia", Times, "Times New Roman", serif;
+}
+
+#navBar {
+	float: right;
+	display: inline-block;
+	width: 20%;
+	height: 20%;
+	position: absolute;
+	top: 40px;
+	right: 0px;
+	bottom: 40px;
+}
+
+.line {
+	border-right: 1px solid #EFEFEF;
+}
+
+#nameBanner {
+	position: absolute;
+	left: 15%;
+	bottom: 0px;
+	background-color: #0BADA7;
+	color: #FFFFFF;
+}
+
+#main {
+	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif
+}
