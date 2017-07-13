@@ -6,23 +6,25 @@
 }
 
 header {
+	background-color: #FFFFFF;
 	width: 960px;
 	height: 100px;
 	font-family: "Georgia", Times, "Times New Roman", serif;
+	margin: auto;
 }
 
-section {
-	
+#background {
+	background-image: url(../images/tree_bark.png);
 }
 
-#main {
+#mainBio {
 	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif
 }
 
-#navBar {
+nav {
 	float: right;
 	display: inline-block;
-	width: 20%;
+	width: 27%;
 	height: 20%;
 	position: absolute;
 	top: 40px;
@@ -30,18 +32,23 @@ section {
 	bottom: 40px;
 }
 
-.line {
-	border-right: 1px solid #EFEFEF;
+#navAbout, #navPort, #navCon {
 	text-decoration: none;
 	color: #777777;
 	padding: 0px 10px;
+	font-size: 18px;
+}	
+
+#navAbout, #navPort {
+	border-right: 2px solid #EFEFEF;
 }
+
 
 #nameBanner {
 	position: absolute;
 	height: 90%;
 	padding: 25px 3%;
-	left: 10%;
+	left: 0px;
 	bottom: 0px;
 	background-color: #0BADA7;
 	color: #FFFFFF;
@@ -54,9 +61,25 @@ section {
 }
 
 #aboutMe {
+	margin-top: 30px;
+	margin-left: 16.7%;
+	height: 100px;
+	width: 650px;
 	color: #0BADA7;
+	background-color: #FFFFFF;
 }
 
+section {
+	width: 650px;
+	background-color: #FFFFFF;
+	margin-left: 16.7%
+}
+
+#adamImage {
+	display: inline-block;
+	height: 15%;
+	width: 25%;
+}
 
 #links {
 	float: right;
