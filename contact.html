@@ -10,7 +10,7 @@
 </head>
 <!-- background="assets/images/tree_bark.png" -->
 <body> 
-	<main class="content">
+	<main>
 	<!--Header includes name for page and links to other parts of portfolio should be the same on each page with the same links-->
 	<header>
 	<!-- sizeSet sets the size of the banner to be 960px wide -->
@@ -19,7 +19,7 @@
 				<h1>Adam de Lorimier-Farmer</h1>
 			</div>
 
-			<nav>	
+			<nav class="navBar">	
 				<a href="index.html" id="navAbout">About</a>
 				<a href="portfolio.html" id="navPort">Portfolio</a>
 				<a href="contact.html" id="navCon">Contact</a>
@@ -30,26 +30,32 @@
 		<hr class="divLine"/>
 		<!--Section includes the main part of page, including bio and profile image-->
 	<div id="sizeDiv">	
-		<section id ="mainBio">
-				<h1 id="aboutMe">About Me</h1>
-				<article>
-					<img src="assets/images/placeholder.jpg" alt="picture of Adam" id="adamImage" class="clearFix">
-					<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id varius urna. Vestibulum ante ipsum primis in faucibus orci 	luctus et ultrices posuere cubilia Curae; Donec interdum, risus et vulputate aliquet, erat ipsum gravida neque, eget laoreet metus nibh in ante. Phasellus diam quam, consectetur sed justo interdum, condimentum ullamcorper tellus. Nam vitae libero tortor. Aliquam sollicitudin ligula sed leo dignissim bibendum. Donec convallis erat est, et vestibulum tortor volutpat in.
-					</p>
-					<p> 
-					Pellentesque placerat lorem a metus ullamcorper euismod. Etiam dictum enim sed orci pellentesque varius. Curabitur et odio non nulla consectetur vulputate. Curabitur facilisis non velit ut pharetra. Pellentesque et nisl tempor, convallis arcu et, egestas neque. Praesent elit massa, pharetra eget interdum vitae, accumsan eu libero. Morbi gravida, felis sed bibendum consequat, libero massa vestibulum mi, ut dapibus metus augue eu augue. Phasellus nec elit ultricies, vulputate leo vitae, molestie justo. Cras pretium nisl non eros commodo vestibulum. Aliquam et augue erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla blandit non urna id sollicitudin. Nam vitae magna vel orci tempus facilisis. Sed imperdiet elementum neque. Vestibulum tincidunt maximus lectus.
-					</p>
-				</article>	
+		<section  class="sectionFont">
+				<h1 class="mainHead">Contact</h1>
+				<form class="topBorder">
+					<label for="name" class="textLabel">Name</label>
+					<br/>
+				    <input type="text" class="textField" name="name" placeholder="John Smith">
+				    <br/>
+				    <label for="email" class="textLabel">Email</label>
+				    <br/>
+				    <input type="text" class="textField" name="email" placeholder="example.gmail.com">
+				    <br/>
+				    <label for="message" class="textLabel">Message</label>
+				    <br/>
+				    <textarea type="text" class="textField" id="textArea" name="message" ></textarea>
+				    <br/>
+				    <input type="submit" id="submit" value="Submit">
+				</form>	
 		</section>
 		<!--aside tags include links to various other pages with my work/resume -->
 
 		<aside id="links">
-			<h2>Connect with Me</h2>
+			<h2 class="goodFont">Connect with Me</h2>
 				<div id="picBar">
-					<a href="#"><img src="assets/images/Github.png" alt="Github" class="linkPic"></a>
-					<a href="#"><img src="assets/images/gmail.png" alt="Gmail" class="linkPic"></a>
-					<a href="#"><img src="assets/images/linkedin.png" alt="linkedin" class="linkPic"></a>
+					<a href="https://github.com/mothra42" target="_blank"><img src="assets/images/Github.png" alt="Github" class="linkPic"></a>
+					<a href="mailto:adam.a.farmer4129@gmail.com"><img src="assets/images/gmail.png" alt="Gmail" class="linkPic"></a>
+					<a href="https://www.linkedin.com/in/adam-de-lorimier-farmer-059958114/" target="_blank"><img src="assets/images/linkedin.png" alt="linkedin" class="linkPic"></a>
 				</div>
 		</aside>
 	</div>
