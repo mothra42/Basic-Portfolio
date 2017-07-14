@@ -7,8 +7,6 @@
 
 body {
 	background-image: url(../images/tree_bark.png);
-	width: auto;
-	height: auto;
 }
 
 header {
@@ -90,12 +88,18 @@ h2 {
 	padding-left: 15%;
 }
 
-section {
+#sizeDiv {
 	width: 650px;
+}
+
+section {
+	width: 100%;
 	background-color: #FFFFFF;
 	margin-left: 16.7%;
 	border: 1px solid #777777;
-	margin-top: 3%;
+	margin-top: 6%;
+	margin-right: 0px;
+	right: -20.8%;
 }
 
 article {
@@ -120,12 +124,13 @@ p {
 }
 
 aside {
+	position: absolute;
 	background-color: #FFFFFF;
 	height: 200px;
 	width: 270px;
-	top: 20.2%;
-	right: 15%;
 	border: 1px solid #777777;
+	top: 0%;
+	left: 145%;
 }
 
 .linkPic {
