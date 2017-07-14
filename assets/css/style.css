@@ -5,7 +5,11 @@
 	position: relative;
 }
 
+
 body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	background-image: url(../images/tree_bark.png);
 }
 
@@ -70,6 +74,10 @@ h1 {
 	background-color: #777777;
 }
 
+main {
+	flex: 1;
+}
+
 #aboutMe {
 	height: 65px;
 	width: 100%;
@@ -95,10 +103,11 @@ h2 {
 section {
 	width: 100%;
 	background-color: #FFFFFF;
-	margin-left: 16.7%;
 	border: 1px solid #777777;
+	margin-left: 16.7%;
 	margin-top: 6%;
 	margin-right: 0px;
+	margin-bottom: 21.5%;
 	right: -20.8%;
 }
 
@@ -111,8 +120,7 @@ article {
 	margin-top: 5%;
 	margin-right: 3%;
 	display: inline-block;
-	height: 15%;
-	width: 25%;
+	width: 40%;
 	float: left;
 }
 
@@ -144,7 +152,21 @@ aside {
 	margin: 2% 12%;
 }
 
-/*.clearFix::after {
-	display: block;
-	clear: both;
-}*/
+footer {
+	margin-top: 30px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	border-top: 10px solid #4aaaa5;
+	height: 100px;
+	width: 100%;
+	background-color: #666666;
+	flex-shrink: 0;
+	text-align: center;
+	color: #d1cfcc;
+	letter-spacing: 0.5px;
+	padding: 3%;
+	font-size: .83em;
+}
+

@@ -1,54 +1,61 @@
 <!DOCTYPE html>
-</!DOCTYPE html>
 <html>
 
 <!-- links css file -->
 
 <head>
 	<link rel="stylesheet" type="text/css" href="assests/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<link rel="stylesheet" type ="text/css" href="assets/css/style.css">
 	<title>Adam de Lorimier-Farmer's Portfolio</title>
 </head>
-
-<body>
-
-	<!--  Header includes name for page and links to other parts of portfolio should be the same on each page with the same links -->
-
+<!-- background="assets/images/tree_bark.png" -->
+<body> 
+	<main class="content">
+	<!--Header includes name for page and links to other parts of portfolio should be the same on each page with the same links-->
 	<header>
-		<div id="nameBanner">
-			<h1>Adam de Lorimier-Farmer</h1>
+	<!-- sizeSet sets the size of the banner to be 960px wide -->
+		<div id="sizeSet">
+			<div id="nameBanner">
+				<h1>Adam de Lorimier-Farmer</h1>
+			</div>
+
+			<nav>	
+				<a href="index.html" id="navAbout">About</a>
+				<a href="portfolio.html" id="navPort">Portfolio</a>
+				<a href="contact.html" id="navCon">Contact</a>
+			</nav>
 		</div>
-
-		<div id="navBar">	
-			<a href="index.html" class ="line"> About </a>
-			<a href="portfolio.html" class="line"> Portfolio </a>
-			<a href="contact.html" class="line"> Contact </a>
-		</div>	
 	</header>
+	<!-- divLine class is to define a style for divline. used in first version of code, may be removed -->
+		<hr class="divLine"/>
+		<!--Section includes the main part of page, including bio and profile image-->
+	<div id="sizeDiv">	
+		<section id ="mainBio">
+				<h1 id="aboutMe">About Me</h1>
+				<article>
+					<img src="assets/images/placeholder.jpg" alt="picture of Adam" id="adamImage" class="clearFix">
+					<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id varius urna. Vestibulum ante ipsum primis in faucibus orci 	luctus et ultrices posuere cubilia Curae; Donec interdum, risus et vulputate aliquet, erat ipsum gravida neque, eget laoreet metus nibh in ante. Phasellus diam quam, consectetur sed justo interdum, condimentum ullamcorper tellus. Nam vitae libero tortor. Aliquam sollicitudin ligula sed leo dignissim bibendum. Donec convallis erat est, et vestibulum tortor volutpat in.
+					</p>
+					<p> 
+					Pellentesque placerat lorem a metus ullamcorper euismod. Etiam dictum enim sed orci pellentesque varius. Curabitur et odio non nulla consectetur vulputate. Curabitur facilisis non velit ut pharetra. Pellentesque et nisl tempor, convallis arcu et, egestas neque. Praesent elit massa, pharetra eget interdum vitae, accumsan eu libero. Morbi gravida, felis sed bibendum consequat, libero massa vestibulum mi, ut dapibus metus augue eu augue. Phasellus nec elit ultricies, vulputate leo vitae, molestie justo. Cras pretium nisl non eros commodo vestibulum. Aliquam et augue erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla blandit non urna id sollicitudin. Nam vitae magna vel orci tempus facilisis. Sed imperdiet elementum neque. Vestibulum tincidunt maximus lectus.
+					</p>
+				</article>	
+		</section>
+		<!--aside tags include links to various other pages with my work/resume -->
 
-	<!-- Section includes the main part of page. In this case it includes links to various projects I will work on further in the course -->
-
-	<section id ="main">
-		<article>
-			<h1>Portfolio</h1>
-			<hr/>
-			<p>WORDS</p>
-			<p>More Words</p>
-		</article>
-	</section>
-
-	<!-- aside tags include links to various other pages with my work/resume -->
-
-	<aside id="links">
-		<list>
-			<a href="#">Github</a>
-			<a href="#">Linkedin</a>
-			<a href="#">Something Else</a>
-		</list>	
-	</aside>
-
+		<aside id="links">
+			<h2>Connect with Me</h2>
+				<div id="picBar">
+					<a href="#"><img src="assets/images/Github.png" alt="Github" class="linkPic"></a>
+					<a href="#"><img src="assets/images/gmail.png" alt="Gmail" class="linkPic"></a>
+					<a href="#"><img src="assets/images/linkedin.png" alt="linkedin" class="linkPic"></a>
+				</div>
+		</aside>
+	</div>
+	</main>
 	<footer>
-	Footer
+	© 2017 Adam de Lorimier-Farmer
 	</footer>
 
 </body>
